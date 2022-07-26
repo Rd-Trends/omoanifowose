@@ -1,0 +1,26 @@
+.input {
+  font-size: 16px;
+  background: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid lightgray;
+}
+
+.input[type="search"] {
+  border: none;
+  padding: 0.5rem 1rem;
+  width: 90%;
+}
+
+.input:hover,
+.input:active {
+  border: 1px solid var(--primary_color);
+}
+
+.input[type="search"]:hover,
+.input[type="search"]:active {
+  border: none;
+}

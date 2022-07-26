@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: calc(100%);
+  max-width: 600px;
+  padding: 0;
+  margin: 3rem 1rem 1rem;
+
+  ul,
+  ol {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.wrapper li {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none !important;
+}
+
+.wrapper li a {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper li svg {
+  color: var(--primary_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activePage {
+  border-radius: 50px;
+  border: 2px solid var(--primary_color);
+  outline: none;
+}
+
+.previousPage {
+  color: red;
+}

@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: -2rem 0.5rem 0;
+  position: relative;
+  border-radius: 5px;
+  padding: 1.1rem 0 0.5rem;
+  box-shadow: 0px 4px 24px 0px rgba($color: #000000, $alpha: 0.1)
+}
+
+.wrapper div {
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+
+.wrapper div svg {
+  fill: var(--primary_color);
+  margin-top: 0.2rem;
+  margin-right: 3px;
+}
+
+.wrapper div > * {
+  font-weight: 600;
+}
+
+.wrapper p,
+.wrapper a {
+  padding-right: 0.5rem;
+}
+
+.wrapper a {
+  padding: 0.2rem 0.5rem 0.2rem 0;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0 0.3rem;
+  }
+
+  .wrapper div {
+    padding: 0.25rem 1rem;
+  }
+}

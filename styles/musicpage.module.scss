@@ -1,0 +1,36 @@
+@import "page_commons.module";
+
+.genreSection {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.genreSection a {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid rgb(209, 208, 208);
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+  border-radius: 5px;
+}
+
+.genreSection a:active,
+.genreSection a:hover,
+.genreSection a:focus {
+  border-color: var(--primary_color);
+}
+
+.posts_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .posts_container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 1rem;
+  }
+}

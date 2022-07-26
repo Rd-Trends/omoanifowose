@@ -1,0 +1,62 @@
+.dropdown-menu {
+  transform: scale(0, 0);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+
+  border: none !important;
+
+  .dropdown-item {
+    width: auto;
+    cursor: pointer;
+  }
+
+  // Dropdown Header
+  .dropdown-header {
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+.show {
+  > .dropdown-menu {
+    transform: translateX(30px);
+    opacity: 1;
+    display: block;
+  }
+  .dropdown-toggle {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  // For DD box shadow on show
+  .btn {
+    &.dropdown-toggle {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// .dropdown-menu {
+//   // Dropdown margin according to dropdown position
+
+//   &[data-popper-placement="bottom-start"],
+//   &[data-popper-placement="bottom-end"] {
+//     margin-top: 1rem !important;
+//   }
+
+//   &[data-popper-placement="top-start"],
+//   &[data-popper-placement="top-end"] {
+//     margin-bottom: 1rem !important;
+//   }
+
+//   &[data-popper-placement="right-start"],
+//   &[data-popper-placement="right-end"] {
+//     margin-left: 1rem !important;
+//   }
+//   &[data-popper-placement="left-start"],
+//   &[data-popper-placement="left-end"] {
+//     margin-right: 1rem !important;
+//   }
+// }

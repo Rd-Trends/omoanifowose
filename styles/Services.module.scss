@@ -1,0 +1,40 @@
+.services_container {
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+
+  h2,
+  h3 {
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 1rem 0;
+    padding: 0 1rem 0;
+  }
+
+  li {
+    list-style: circle;
+    line-height: 28px;
+    padding: 0;
+  }
+
+  p {
+    line-height: 1.8rem;
+    margin: 0 0 1rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services_container {
+    a {
+      font-size: 2rem !important;
+    }
+  }
+}

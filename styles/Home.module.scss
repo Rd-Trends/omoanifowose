@@ -1,0 +1,122 @@
+.container {
+  display: grid;
+  justify-content: space-between;
+  margin: 3rem 1rem;
+
+  .section_title {
+    margin-bottom: 1.2rem;
+    color: var(--heading_text_color);
+    border-left: 5px solid var(--primary_color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0rem 1rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  .recent_quotes_container,
+  .recent_music_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.5rem;
+  }
+
+  .recent_news_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+
+.see_more_link {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  color: var(--primary_color);
+  max-width: 100%;
+
+  &:hover {
+    color: #0b1b5a;
+  }
+}
+
+.aside {
+  margin-top: -2rem;
+}
+
+@media screen and (max-width: 320px) {
+  .recent_music_container,
+  .recent_quotes_container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 4rem 2rem;
+  }
+
+  .main {
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .recent_quotes_container,
+    .recent_music_container {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem 0.5rem;
+    }
+
+    .recent_news_container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  .aside {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    margin: 4rem 7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: 70% 30%;
+    gap: 2rem;
+    margin: 4rem 7rem;
+  }
+
+  .aside {
+    margin-left: 1rem;
+    padding: 2rem 0;
+
+    div {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 5rem;
+    }
+  }
+}
+
+// @media screen and (min-width: 768px) and (max-width: 900px) {
+//   .container {
+//     margin: 4rem 2rem;
+//   }
+// }

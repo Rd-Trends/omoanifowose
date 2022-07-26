@@ -1,0 +1,27 @@
+.btn {
+  outline: none;
+  border: none;
+  //   width: 100%;
+  display: inline-block;
+  padding: 0.7rem 1rem;
+}
+
+.primary {
+  background-color: var(--primary_color);
+  color: white;
+  border: 1px solid var(--primary_color);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--primary_color);
+  }
+}
+
+.default {
+  background-color: transparent;
+  color: initial;
+
+  &:hover {
+    scale: 1.5;
+  }
+}
